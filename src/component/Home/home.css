@@ -1,0 +1,26 @@
+.container {
+  min-height: 100%; /* minimum height = screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../../images/background.jpeg');
+  background-size: cover;
+
+}
+
+.Home{
+    font-weight: 600;
+    font-size: 80px;
+}
+
+button{
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+}
+
+.quoteContainer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

@@ -1,44 +1,48 @@
 /* root is an id name, therefore use # symbol for it */
 
-#root, html,body{
-    margin:0;
-    padding: 0;
-    height: 100vh;
-    box-sizing: border-box;
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.app{
-    height: 100%;
-    /* use linear gradient to dark the bcg image */
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('./images/background.jpeg');
-    background-size: cover;
-    background-position: center;
+.app {
+  height: 100%;
+  
+  /* use linear gradient to dark the bcg image */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../images/background.jpeg");
+  background-size: cover;
+  background-position: center;
 
-    /* use this to center the card div inside of  the app div */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  /* use this to center the card div inside of  the app div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.card{ 
-    background-color: whitesmoke;
-    width: 40%;
-    height: 20%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 25px;
-    padding:2%;
-    box-shadow: 10px 10px;
+.card {
+  background-color: whitesmoke;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 2%;
+  box-shadow: 10px 10px;
 }
 
-.heading{
-    display: flex;
-    align-items: center;
-    height:580px;
-    font-family: 'Shippori Antique B1', sans-serif;
+.heading {
+  display: flex;
+  align-items: center;
+  height: 580px;
+  font-family: "Shippori Antique B1", sans-serif;
 }
 
 .button {
@@ -57,23 +61,23 @@
   background-color: #ffffff;
   border: 1px solid rgba(22, 76, 167, 0.6);
 }
-  
+
 .button span {
   color: #164ca7;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.7px;
 }
-  
+
 .button:hover {
   animation: rotate 0.7s ease-in-out both;
 }
-  
+
 .button:hover span {
   animation: storm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
-  
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
@@ -91,7 +95,7 @@
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
-  
+
 @keyframes storm {
   0% {
     transform: translate3d(0, 0, 0) translateZ(0);
@@ -108,11 +112,11 @@
   100% {
     transform: translate3d(0, 0, 0) translateZ(0);
   }
-}  
+}
 
 @media only screen and (max-width: 600px) {
   .card {
-      width: 80%;
-      height: 30%;
+    width: 80%;
+    height: 30%;
   }
 }
